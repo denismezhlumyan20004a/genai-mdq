@@ -1,29 +1,37 @@
 # GenAI Master Data Quality & Document Intelligence
 
-Personal project: entity resolution (golden records) for Spanish company master data,
-data-quality rules, and (next) LLM-based invoice extraction with evals, served via FastAPI.
+Personal project: ML entity resolution (golden records) for Spanish company master data, data-quality rules,
+and LLM invoice extraction (Claude + Pydantic) with business-rule validation and evals, served as a FastAPI service.
+
+**Highlights:** LLM extraction 99.6% field accuracy vs 72.6% regex baseline at <$0.005/invoice ·
+entity resolution F1 0.985 vs 0.734 CIF-only · FastAPI + Docker + CI.
 
 ## Status
 - [x] Day 1 — synthetic Spanish company data with ground truth (noisy duplicates + hard negatives)
 - [x] Day 2 — entity resolution: normalization → blocking → similarity features → classifier → clusters → golden record
-- [ ] Day 3 — multilingual embeddings as extra feature
-- [ ] Day 4 — data-quality rules & report
+- [x] Day 4 — data-quality rules & report (completeness, validity, score 0–100)
 - [x] Days 5–6 — LLM invoice extraction (Pydantic structured outputs, self-correcting retry) + business-rule validation + field-level evals
 - [x] Day 7 — FastAPI service (/match, /validate, /extract, /invoices/validate) + Docker
 - [x] Day 8 — tests + GitHub Actions CI (pytest, metrics guard, Docker build + smoke test)
+- [ ] Next — multilingual embeddings as extra matching feature
 
 ## Quickstart
+Linux / macOS:
 ```bash
 python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-PYTHONPATH=src python -m mdq.generate --n 2000 --dup-rate 0.3
+pip install -r requirements-dev.txt
+make data && make train && pytest -q
 python eval/eval_matching.py
-# invoices (days 5-6)
-PYTHONPATH=src python -m mdq.invoices --n 50
-python eval/eval_extraction.py                 # regex baseline, no API key
-export ANTHROPIC_API_KEY=...                   # then:
-python eval/eval_extraction.py --llm text pdf  # Claude on extracted text vs native PDF
-pytest -q
+python eval/eval_extraction.py                       # regex baseline, no API key
+ANTHROPIC_API_KEY=... python eval/eval_extraction.py --llm text pdf
+```
+Windows (CMD):
+```bat
+python -m venv .venv && .venv\Scripts\activate
+pip install -r requirements-dev.txt
+run_all.bat
+set ANTHROPIC_API_KEY=...
+python eval\eval_extraction.py --llm text pdf
 ```
 
 ## API
@@ -86,10 +94,19 @@ valid IVA rate, no future dates, supplier exists in master data. On ground-truth
 | Extractor | Field acc. | Line items | Docs 100% correct | Error recall | Unsafe auto-approve | Supplier link | Latency | Cost/doc |
 |---|---|---|---|---|---|---|---|---|
 | Regex baseline | 0.726 | 0.74 | 0.62 | 0.70 | 5 / 50 | 0.74 | 0.08 s | $0 |
-| Claude (text) | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD |
-| Claude (native PDF) | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD |
+| Claude Haiku 4.5 (text) | 0.996 | 1.00 | 0.96 | 0.90 | 1 / 50 | 1.00 | 3.5 s | $0.0044 |
+| Claude Haiku 4.5 (native PDF) | 0.998 | 1.00 | 0.98 | 0.90 | 1 / 50 | 1.00 | 4.4 s | $0.0056 |
 
-Regex works on known layouts (85% docs correct on template 0) but collapses on the boxed layout
-(17%). Finding: arithmetic rules cannot catch wrong *text* fields (5 unsafe auto-approvals were
-truncated customer names) → next step: cross-check customer against the customer master and add
-LLM confidence / dual-extraction agreement before auto-approving.
+**Findings**
+- The LLM lifts field accuracy from 72.6% to 99.6–99.8% and fully-correct documents from 62% to 96–98%,
+  for under half a cent per invoice. On the hardest (boxed) layout: regex 17% vs LLM 83–92%.
+- Native PDF input is slightly more accurate than extracted text (+2 pp documents) at ~27% higher cost
+  and ~0.8 s more latency, so text input is the default and PDF input is the fallback for complex layouts.
+- Unsafe auto-approvals drop from 5 to 1. The remaining miss is an invoice with a wrong printed total:
+  despite the prompt, the model returned the *mathematically correct* total, which hid the error from the
+  business rules. Lesson: LLMs tend to "helpfully" fix values, so amounts must be cross-checked
+  deterministically against the source text before auto-approval.
+- Regex is ~25x faster and free, but brittle: it only works on layouts it was written for.
+
+**Next steps:** deterministic cross-check of LLM amounts against the PDF text; customer master lookup;
+confidence-based routing; Bedrock + Textract for scanned documents.
