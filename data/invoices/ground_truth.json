@@ -1,0 +1,1832 @@
+[
+  {
+    "doc_id": "INV000",
+    "invoice_number": "F7204",
+    "issue_date": "2025-02-08",
+    "supplier_name": "Molina Cano Carpinteria S.L.",
+    "supplier_cif": "B30568786",
+    "customer_name": "Reformas Integrales Sur S.L.",
+    "customer_cif": "B13186093",
+    "line_items": [
+      {
+        "description": "Alfombra yute 160x230",
+        "quantity": 1,
+        "unit_price": 68.69,
+        "line_total": 68.69
+      },
+      {
+        "description": "Panel japones 60x300",
+        "quantity": 20,
+        "unit_price": 31.95,
+        "line_total": 639.0
+      }
+    ],
+    "subtotal": 636.92,
+    "vat_rate": 21,
+    "vat_amount": 133.75,
+    "total": 770.67,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 0
+  },
+  {
+    "doc_id": "INV001",
+    "invoice_number": "2025/1696",
+    "issue_date": "2025-07-12",
+    "supplier_name": "Ingenieria Martinez Levante S.L.",
+    "supplier_cif": "B17390634",
+    "customer_name": "Restaurante El Olivo S.L.",
+    "customer_cif": "B19093780",
+    "line_items": [
+      {
+        "description": "Tela tapiceria terciopelo (m)",
+        "quantity": 2,
+        "unit_price": 26.98,
+        "line_total": 53.96
+      },
+      {
+        "description": "Alfombra yute 160x230",
+        "quantity": 4,
+        "unit_price": 127.23,
+        "line_total": 508.92
+      }
+    ],
+    "subtotal": 562.88,
+    "vat_rate": 21,
+    "vat_amount": 118.2,
+    "total": 681.08,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 1
+  },
+  {
+    "doc_id": "INV002",
+    "invoice_number": "2025/9838",
+    "issue_date": "2025-12-15",
+    "supplier_name": "Fernandez Ortiz Suministros Grupo S.L.",
+    "supplier_cif": "B50245067",
+    "customer_name": "Reformas Integrales Sur S.L.",
+    "customer_cif": "B97114714",
+    "line_items": [
+      {
+        "description": "Barra cortina forja 160cm",
+        "quantity": 12,
+        "unit_price": 25.77,
+        "line_total": 309.24
+      },
+      {
+        "description": "Estor enrollable blackout",
+        "quantity": 1,
+        "unit_price": 49.45,
+        "line_total": 49.45
+      },
+      {
+        "description": "Visillo voile blanco (m)",
+        "quantity": 10,
+        "unit_price": 7.48,
+        "line_total": 74.8
+      },
+      {
+        "description": "Tela tapiceria terciopelo (m)",
+        "quantity": 5,
+        "unit_price": 17.65,
+        "line_total": 88.25
+      },
+      {
+        "description": "Servicio de instalacion (h)",
+        "quantity": 8,
+        "unit_price": 33.43,
+        "line_total": 267.44
+      },
+      {
+        "description": "Riel aluminio 2m",
+        "quantity": 1,
+        "unit_price": 25.76,
+        "line_total": 25.76
+      }
+    ],
+    "subtotal": 733.45,
+    "vat_rate": 21,
+    "vat_amount": 154.02,
+    "total": 887.47,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 2
+  },
+  {
+    "doc_id": "INV003",
+    "invoice_number": "2025/2343",
+    "issue_date": "2026-07-17",
+    "supplier_name": "Servicios Informaticos Sanchez Levante S.L.U.",
+    "supplier_cif": "B39533948",
+    "customer_name": "Reformas Integrales Sur S.L.",
+    "customer_cif": "B84656321",
+    "line_items": [
+      {
+        "description": "Riel aluminio 2m",
+        "quantity": 12,
+        "unit_price": 13.06,
+        "line_total": 156.72
+      },
+      {
+        "description": "Visillo voile blanco (m)",
+        "quantity": 4,
+        "unit_price": 7.16,
+        "line_total": 28.64
+      },
+      {
+        "description": "Estor enrollable blackout",
+        "quantity": 3,
+        "unit_price": 71.83,
+        "line_total": 215.49
+      }
+    ],
+    "subtotal": 380.81,
+    "vat_rate": 21,
+    "vat_amount": 79.97,
+    "total": 460.78,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 3
+  },
+  {
+    "doc_id": "INV004",
+    "invoice_number": "A-6621",
+    "issue_date": "2026-07-27",
+    "supplier_name": "Alimentacion Vazquez Integral S.L.",
+    "supplier_cif": "B83997981",
+    "customer_name": "Reformas Integrales Sur S.L.",
+    "customer_cif": "B61760310",
+    "line_items": [
+      {
+        "description": "Tela tapiceria terciopelo (m)",
+        "quantity": 10,
+        "unit_price": 26.83,
+        "line_total": 268.3
+      },
+      {
+        "description": "Cortina lino beige 140x260",
+        "quantity": 5,
+        "unit_price": 87.42,
+        "line_total": 437.1
+      },
+      {
+        "description": "Riel aluminio 2m",
+        "quantity": 20,
+        "unit_price": 29.1,
+        "line_total": 582.0
+      }
+    ],
+    "subtotal": 1287.4,
+    "vat_rate": 21,
+    "vat_amount": 270.35,
+    "total": 1557.75,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 0
+  },
+  {
+    "doc_id": "INV005",
+    "invoice_number": "F5713",
+    "issue_date": "2025-05-28",
+    "supplier_name": "Electricidad Vazquez del Sur S.A.",
+    "supplier_cif": "A73429391",
+    "customer_name": "Clinica Dental Sonrisa S.L.P.",
+    "customer_cif": "B47280383",
+    "line_items": [
+      {
+        "description": "Riel aluminio 2m",
+        "quantity": 1,
+        "unit_price": 27.74,
+        "line_total": 27.74
+      },
+      {
+        "description": "Transporte y montaje",
+        "quantity": 10,
+        "unit_price": 38.91,
+        "line_total": 389.1
+      },
+      {
+        "description": "Estor enrollable blackout",
+        "quantity": 4,
+        "unit_price": 116.44,
+        "line_total": 465.76
+      },
+      {
+        "description": "Cojin decorativo 45x45",
+        "quantity": 5,
+        "unit_price": 14.64,
+        "line_total": 73.2
+      },
+      {
+        "description": "Cortina lino beige 140x260",
+        "quantity": 1,
+        "unit_price": 81.69,
+        "line_total": 81.69
+      }
+    ],
+    "subtotal": 985.62,
+    "vat_rate": 21,
+    "vat_amount": 206.98,
+    "total": 1192.6,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 1
+  },
+  {
+    "doc_id": "INV006",
+    "invoice_number": "A-5925",
+    "issue_date": "2026-06-15",
+    "supplier_name": "Inmobiliaria Sánchez Grupo S.L.",
+    "supplier_cif": "B17226416",
+    "customer_name": "Clinica Dental Sonrisa S.L.P.",
+    "customer_cif": "B00474395",
+    "line_items": [
+      {
+        "description": "Barra cortina forja 160cm",
+        "quantity": 20,
+        "unit_price": 26.9,
+        "line_total": 538.0
+      },
+      {
+        "description": "Transporte y montaje",
+        "quantity": 3,
+        "unit_price": 66.79,
+        "line_total": 200.37
+      },
+      {
+        "description": "Panel japones 60x300",
+        "quantity": 3,
+        "unit_price": 61.86,
+        "line_total": 185.58
+      }
+    ],
+    "subtotal": 877.75,
+    "vat_rate": 21,
+    "vat_amount": 184.33,
+    "total": 1062.08,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 2
+  },
+  {
+    "doc_id": "INV007",
+    "invoice_number": "A-7688",
+    "issue_date": "2025-03-30",
+    "supplier_name": "Reformas Marin Iberica S.L.",
+    "supplier_cif": "B67371104",
+    "customer_name": "Reformas Integrales Sur S.L.",
+    "customer_cif": "B12220299",
+    "line_items": [
+      {
+        "description": "Barra cortina forja 160cm",
+        "quantity": 1,
+        "unit_price": 30.95,
+        "line_total": 30.95
+      },
+      {
+        "description": "Cojin decorativo 45x45",
+        "quantity": 5,
+        "unit_price": 19.2,
+        "line_total": 96.0
+      },
+      {
+        "description": "Mosquitera enrollable",
+        "quantity": 1,
+        "unit_price": 49.21,
+        "line_total": 49.21
+      },
+      {
+        "description": "Servicio de instalacion (h)",
+        "quantity": 2,
+        "unit_price": 43.2,
+        "line_total": 86.4
+      }
+    ],
+    "subtotal": 262.56,
+    "vat_rate": 21,
+    "vat_amount": 55.14,
+    "total": 318.6,
+    "currency": "EUR",
+    "has_arith_error": true,
+    "template": 3
+  },
+  {
+    "doc_id": "INV008",
+    "invoice_number": "FAC8566",
+    "issue_date": "2026-04-15",
+    "supplier_name": "Hosteleria Delgado S.L.U.",
+    "supplier_cif": "B38750071",
+    "customer_name": "Reformas Integrales Sur S.L.",
+    "customer_cif": "B82828807",
+    "line_items": [
+      {
+        "description": "Panel japones 60x300",
+        "quantity": 3,
+        "unit_price": 62.7,
+        "line_total": 188.1
+      },
+      {
+        "description": "Estor enrollable blackout",
+        "quantity": 3,
+        "unit_price": 42.24,
+        "line_total": 126.72
+      },
+      {
+        "description": "Transporte y montaje",
+        "quantity": 3,
+        "unit_price": 47.58,
+        "line_total": 142.74
+      },
+      {
+        "description": "Riel aluminio 2m",
+        "quantity": 3,
+        "unit_price": 25.75,
+        "line_total": 77.25
+      },
+      {
+        "description": "Alfombra yute 160x230",
+        "quantity": 5,
+        "unit_price": 91.12,
+        "line_total": 455.6
+      },
+      {
+        "description": "Servicio de instalacion (h)",
+        "quantity": 7,
+        "unit_price": 41.68,
+        "line_total": 291.76
+      }
+    ],
+    "subtotal": 1282.17,
+    "vat_rate": 10,
+    "vat_amount": 128.22,
+    "total": 1410.39,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 0
+  },
+  {
+    "doc_id": "INV009",
+    "invoice_number": "FAC8491",
+    "issue_date": "2026-06-02",
+    "supplier_name": "Logistica Orion Global S.L.",
+    "supplier_cif": "B18517441",
+    "customer_name": "Hotel Plaza Mayor S.A.",
+    "customer_cif": "B47887831",
+    "line_items": [
+      {
+        "description": "Cortina lino beige 140x260",
+        "quantity": 1,
+        "unit_price": 83.58,
+        "line_total": 83.58
+      },
+      {
+        "description": "Cojin decorativo 45x45",
+        "quantity": 1,
+        "unit_price": 11.48,
+        "line_total": 11.48
+      },
+      {
+        "description": "Transporte y montaje",
+        "quantity": 4,
+        "unit_price": 32.53,
+        "line_total": 130.12
+      },
+      {
+        "description": "Visillo voile blanco (m)",
+        "quantity": 1,
+        "unit_price": 10.57,
+        "line_total": 10.57
+      },
+      {
+        "description": "Servicio de instalacion (h)",
+        "quantity": 1,
+        "unit_price": 40.2,
+        "line_total": 40.2
+      }
+    ],
+    "subtotal": 275.95,
+    "vat_rate": 21,
+    "vat_amount": 57.95,
+    "total": 333.9,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 1
+  },
+  {
+    "doc_id": "INV010",
+    "invoice_number": "A-8083",
+    "issue_date": "2025-04-07",
+    "supplier_name": "Distribuciones Lozano Levante S.L.",
+    "supplier_cif": "B39476460",
+    "customer_name": "Hotel Plaza Mayor S.A.",
+    "customer_cif": "B32686560",
+    "line_items": [
+      {
+        "description": "Cojin decorativo 45x45",
+        "quantity": 1,
+        "unit_price": 10.98,
+        "line_total": 10.98
+      },
+      {
+        "description": "Estor enrollable blackout",
+        "quantity": 4,
+        "unit_price": 102.71,
+        "line_total": 410.84
+      },
+      {
+        "description": "Barra cortina forja 160cm",
+        "quantity": 2,
+        "unit_price": 43.37,
+        "line_total": 86.74
+      },
+      {
+        "description": "Alfombra yute 160x230",
+        "quantity": 5,
+        "unit_price": 77.16,
+        "line_total": 385.8
+      }
+    ],
+    "subtotal": 894.36,
+    "vat_rate": 4,
+    "vat_amount": 35.77,
+    "total": 930.13,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 2
+  },
+  {
+    "doc_id": "INV011",
+    "invoice_number": "FV7018",
+    "issue_date": "2025-10-04",
+    "supplier_name": "Suministros Moreno Iberica S.L.",
+    "supplier_cif": "B90951955",
+    "customer_name": "Clinica Dental Sonrisa S.L.P.",
+    "customer_cif": "B46288973",
+    "line_items": [
+      {
+        "description": "Servicio de instalacion (h)",
+        "quantity": 5,
+        "unit_price": 35.25,
+        "line_total": 176.25
+      },
+      {
+        "description": "Cortina lino beige 140x260",
+        "quantity": 1,
+        "unit_price": 41.21,
+        "line_total": 41.21
+      },
+      {
+        "description": "Alfombra yute 160x230",
+        "quantity": 3,
+        "unit_price": 176.6,
+        "line_total": 529.8
+      },
+      {
+        "description": "Cojin decorativo 45x45",
+        "quantity": 1,
+        "unit_price": 9.18,
+        "line_total": 9.18
+      }
+    ],
+    "subtotal": 756.44,
+    "vat_rate": 21,
+    "vat_amount": 158.85,
+    "total": 915.29,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 3
+  },
+  {
+    "doc_id": "INV012",
+    "invoice_number": "FAC2217",
+    "issue_date": "2025-10-02",
+    "supplier_name": "Suministros Moreno S.L.",
+    "supplier_cif": "B97871370",
+    "customer_name": "Decoraciones Martin S.L.",
+    "customer_cif": "B83124024",
+    "line_items": [
+      {
+        "description": "Cortina lino beige 140x260",
+        "quantity": 4,
+        "unit_price": 39.61,
+        "line_total": 158.44
+      },
+      {
+        "description": "Panel japones 60x300",
+        "quantity": 3,
+        "unit_price": 30.8,
+        "line_total": 92.4
+      },
+      {
+        "description": "Estor enrollable blackout",
+        "quantity": 1,
+        "unit_price": 76.3,
+        "line_total": 76.3
+      }
+    ],
+    "subtotal": 327.14,
+    "vat_rate": 4,
+    "vat_amount": 13.09,
+    "total": 340.23,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 0
+  },
+  {
+    "doc_id": "INV013",
+    "invoice_number": "FAC6540",
+    "issue_date": "2026-05-22",
+    "supplier_name": "Garcia Rubio Electricidad S.L.U.",
+    "supplier_cif": "B08710063",
+    "customer_name": "Restaurante El Olivo S.L.",
+    "customer_cif": "B43353267",
+    "line_items": [
+      {
+        "description": "Cortina lino beige 140x260",
+        "quantity": 1,
+        "unit_price": 36.01,
+        "line_total": 36.01
+      },
+      {
+        "description": "Tela tapiceria terciopelo (m)",
+        "quantity": 20,
+        "unit_price": 27.23,
+        "line_total": 544.6
+      },
+      {
+        "description": "Mosquitera enrollable",
+        "quantity": 3,
+        "unit_price": 38.0,
+        "line_total": 114.0
+      }
+    ],
+    "subtotal": 694.61,
+    "vat_rate": 10,
+    "vat_amount": 69.46,
+    "total": 763.07,
+    "currency": "EUR",
+    "has_arith_error": true,
+    "template": 1
+  },
+  {
+    "doc_id": "INV014",
+    "invoice_number": "A-3136",
+    "issue_date": "2025-02-16",
+    "supplier_name": "Construcciones Serrano Norte S.L.",
+    "supplier_cif": "B64035074",
+    "customer_name": "Hotel Plaza Mayor S.A.",
+    "customer_cif": "B47045588",
+    "line_items": [
+      {
+        "description": "Estor enrollable blackout",
+        "quantity": 10,
+        "unit_price": 109.64,
+        "line_total": 1096.4
+      }
+    ],
+    "subtotal": 1096.4,
+    "vat_rate": 21,
+    "vat_amount": 230.24,
+    "total": 1326.64,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 2
+  },
+  {
+    "doc_id": "INV015",
+    "invoice_number": "F5009",
+    "issue_date": "2026-02-08",
+    "supplier_name": "Textil Diaz Levante 2000 S.L.",
+    "supplier_cif": "B13207238",
+    "customer_name": "Interiorismo Nova S.L.",
+    "customer_cif": "B31982960",
+    "line_items": [
+      {
+        "description": "Alfombra yute 160x230",
+        "quantity": 4,
+        "unit_price": 120.33,
+        "line_total": 481.32
+      },
+      {
+        "description": "Estor enrollable blackout",
+        "quantity": 3,
+        "unit_price": 59.85,
+        "line_total": 179.55
+      },
+      {
+        "description": "Servicio de instalacion (h)",
+        "quantity": 1,
+        "unit_price": 26.82,
+        "line_total": 26.82
+      }
+    ],
+    "subtotal": 687.69,
+    "vat_rate": 21,
+    "vat_amount": 144.41,
+    "total": 832.1,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 3
+  },
+  {
+    "doc_id": "INV016",
+    "invoice_number": "A-7495",
+    "issue_date": "2025-04-18",
+    "supplier_name": "Consultoria Atlas Levante S.L.",
+    "supplier_cif": "B03163672",
+    "customer_name": "Restaurante El Olivo S.L.",
+    "customer_cif": "B00837401",
+    "line_items": [
+      {
+        "description": "Transporte y montaje",
+        "quantity": 1,
+        "unit_price": 79.58,
+        "line_total": 79.58
+      },
+      {
+        "description": "Mosquitera enrollable",
+        "quantity": 3,
+        "unit_price": 22.98,
+        "line_total": 68.94
+      }
+    ],
+    "subtotal": 148.52,
+    "vat_rate": 21,
+    "vat_amount": 31.19,
+    "total": 179.71,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 0
+  },
+  {
+    "doc_id": "INV017",
+    "invoice_number": "F3348",
+    "issue_date": "2025-10-22",
+    "supplier_name": "Electriciddad Iglesias Integral S.L.",
+    "supplier_cif": "B27615392",
+    "customer_name": "Decoraciones Martin S.L.",
+    "customer_cif": "B92544998",
+    "line_items": [
+      {
+        "description": "Mosquitera enrollable",
+        "quantity": 3,
+        "unit_price": 45.89,
+        "line_total": 137.67
+      },
+      {
+        "description": "Barra cortina forja 160cm",
+        "quantity": 12,
+        "unit_price": 31.34,
+        "line_total": 376.08
+      }
+    ],
+    "subtotal": 488.06,
+    "vat_rate": 21,
+    "vat_amount": 102.49,
+    "total": 590.55,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 1
+  },
+  {
+    "doc_id": "INV018",
+    "invoice_number": "F9626",
+    "issue_date": "2025-08-04",
+    "supplier_name": "Suministros Torres S.L.",
+    "supplier_cif": "B66032350",
+    "customer_name": "Decoraciones Martin S.L.",
+    "customer_cif": "B28452985",
+    "line_items": [
+      {
+        "description": "Servicio de instalacion (h)",
+        "quantity": 8,
+        "unit_price": 40.34,
+        "line_total": 322.72
+      },
+      {
+        "description": "Tela tapiceria terciopelo (m)",
+        "quantity": 20,
+        "unit_price": 18.78,
+        "line_total": 375.6
+      },
+      {
+        "description": "Transporte y montaje",
+        "quantity": 1,
+        "unit_price": 86.18,
+        "line_total": 86.18
+      },
+      {
+        "description": "Panel japones 60x300",
+        "quantity": 1,
+        "unit_price": 40.16,
+        "line_total": 40.16
+      },
+      {
+        "description": "Mosquitera enrollable",
+        "quantity": 1,
+        "unit_price": 48.7,
+        "line_total": 48.7
+      },
+      {
+        "description": "Barra cortina forja 160cm",
+        "quantity": 12,
+        "unit_price": 44.84,
+        "line_total": 538.08
+      }
+    ],
+    "subtotal": 1340.87,
+    "vat_rate": 21,
+    "vat_amount": 281.58,
+    "total": 1622.45,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 2
+  },
+  {
+    "doc_id": "INV019",
+    "invoice_number": "2025/5642",
+    "issue_date": "2025-01-02",
+    "supplier_name": "Hosteleria Iris Levante S.Coop.",
+    "supplier_cif": "F89121396",
+    "customer_name": "Reformas Integrales Sur S.L.",
+    "customer_cif": "B13044516",
+    "line_items": [
+      {
+        "description": "Cortina lino beige 140x260",
+        "quantity": 12,
+        "unit_price": 57.3,
+        "line_total": 687.6
+      },
+      {
+        "description": "Servicio de instalacion (h)",
+        "quantity": 3,
+        "unit_price": 33.32,
+        "line_total": 99.96
+      }
+    ],
+    "subtotal": 748.18,
+    "vat_rate": 21,
+    "vat_amount": 157.12,
+    "total": 905.3,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 3
+  },
+  {
+    "doc_id": "INV020",
+    "invoice_number": "2025/3210",
+    "issue_date": "2026-06-08",
+    "supplier_name": "Carpinteria Sanz del Sur S.L.",
+    "supplier_cif": "B55562581",
+    "customer_name": "Interiorismo Nova S.L.",
+    "customer_cif": "B60688314",
+    "line_items": [
+      {
+        "description": "Cortina lino beige 140x260",
+        "quantity": 4,
+        "unit_price": 69.92,
+        "line_total": 279.68
+      }
+    ],
+    "subtotal": 279.68,
+    "vat_rate": 21,
+    "vat_amount": 58.73,
+    "total": 338.41,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 0
+  },
+  {
+    "doc_id": "INV021",
+    "invoice_number": "FAC6561",
+    "issue_date": "2026-05-10",
+    "supplier_name": "Asesores Gil Levante S.A.",
+    "supplier_cif": "A75844191",
+    "customer_name": "Decoraciones Martin S.L.",
+    "customer_cif": "B22138788",
+    "line_items": [
+      {
+        "description": "Riel aluminio 2m",
+        "quantity": 10,
+        "unit_price": 18.19,
+        "line_total": 181.9
+      },
+      {
+        "description": "Servicio de instalacion (h)",
+        "quantity": 5,
+        "unit_price": 30.11,
+        "line_total": 150.55
+      }
+    ],
+    "subtotal": 332.45,
+    "vat_rate": 21,
+    "vat_amount": 69.81,
+    "total": 402.26,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 1
+  },
+  {
+    "doc_id": "INV022",
+    "invoice_number": "FV0429",
+    "issue_date": "2026-08-07",
+    "supplier_name": "Iglesias Moreno Hosteleria S.L.",
+    "supplier_cif": "B34383646",
+    "customer_name": "Clinica Dental Sonrisa S.L.P.",
+    "customer_cif": "B66683640",
+    "line_items": [
+      {
+        "description": "Riel aluminio 2m",
+        "quantity": 5,
+        "unit_price": 22.01,
+        "line_total": 110.05
+      }
+    ],
+    "subtotal": 110.05,
+    "vat_rate": 21,
+    "vat_amount": 23.11,
+    "total": 133.16,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 2
+  },
+  {
+    "doc_id": "INV023",
+    "invoice_number": "FAC8125",
+    "issue_date": "2026-04-30",
+    "supplier_name": "Textil Garrido del Sur S.L.",
+    "supplier_cif": "B65933806",
+    "customer_name": "Decoraciones Martin S.L.",
+    "customer_cif": "B16877318",
+    "line_items": [
+      {
+        "description": "Barra cortina forja 160cm",
+        "quantity": 12,
+        "unit_price": 29.66,
+        "line_total": 355.92
+      },
+      {
+        "description": "Alfombra yute 160x230",
+        "quantity": 4,
+        "unit_price": 161.84,
+        "line_total": 647.36
+      },
+      {
+        "description": "Panel japones 60x300",
+        "quantity": 1,
+        "unit_price": 33.34,
+        "line_total": 33.34
+      }
+    ],
+    "subtotal": 984.79,
+    "vat_rate": 21,
+    "vat_amount": 206.81,
+    "total": 1191.6,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 3
+  },
+  {
+    "doc_id": "INV024",
+    "invoice_number": "F1252",
+    "issue_date": "2025-04-25",
+    "supplier_name": "Talleres Alfa Norte S.L.",
+    "supplier_cif": "B10062313",
+    "customer_name": "Interiorismo Nova S.L.",
+    "customer_cif": "B89364392",
+    "line_items": [
+      {
+        "description": "Barra cortina forja 160cm",
+        "quantity": 1,
+        "unit_price": 35.43,
+        "line_total": 35.43
+      },
+      {
+        "description": "Visillo voile blanco (m)",
+        "quantity": 4,
+        "unit_price": 14.66,
+        "line_total": 58.64
+      }
+    ],
+    "subtotal": 94.07,
+    "vat_rate": 21,
+    "vat_amount": 19.75,
+    "total": 113.82,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 0
+  },
+  {
+    "doc_id": "INV025",
+    "invoice_number": "A-3345",
+    "issue_date": "2026-01-07",
+    "supplier_name": "Talleres Orion S.L.",
+    "supplier_cif": "B42386706",
+    "customer_name": "Decoraciones Martin S.L.",
+    "customer_cif": "B48137343",
+    "line_items": [
+      {
+        "description": "Barra cortina forja 160cm",
+        "quantity": 4,
+        "unit_price": 19.49,
+        "line_total": 77.96
+      },
+      {
+        "description": "Transporte y montaje",
+        "quantity": 3,
+        "unit_price": 59.9,
+        "line_total": 179.7
+      },
+      {
+        "description": "Mosquitera enrollable",
+        "quantity": 10,
+        "unit_price": 22.84,
+        "line_total": 228.4
+      },
+      {
+        "description": "Cortina lino beige 140x260",
+        "quantity": 3,
+        "unit_price": 71.7,
+        "line_total": 215.1
+      },
+      {
+        "description": "Alfombra yute 160x230",
+        "quantity": 5,
+        "unit_price": 87.21,
+        "line_total": 436.05
+      }
+    ],
+    "subtotal": 1137.21,
+    "vat_rate": 21,
+    "vat_amount": 238.81,
+    "total": 1376.02,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 1
+  },
+  {
+    "doc_id": "INV026",
+    "invoice_number": "2025/3224",
+    "issue_date": "2025-06-19",
+    "supplier_name": "Construcciones Ruiz e Hijos S.L.",
+    "supplier_cif": "B64235369",
+    "customer_name": "Hotel Plaza Mayor S.A.",
+    "customer_cif": "B87046553",
+    "line_items": [
+      {
+        "description": "Riel aluminio 2m",
+        "quantity": 2,
+        "unit_price": 28.59,
+        "line_total": 57.18
+      },
+      {
+        "description": "Barra cortina forja 160cm",
+        "quantity": 1,
+        "unit_price": 23.75,
+        "line_total": 23.75
+      },
+      {
+        "description": "Servicio de instalacion (h)",
+        "quantity": 3,
+        "unit_price": 33.31,
+        "line_total": 99.93
+      },
+      {
+        "description": "Alfombra yute 160x230",
+        "quantity": 1,
+        "unit_price": 82.09,
+        "line_total": 82.09
+      },
+      {
+        "description": "Cortina lino beige 140x260",
+        "quantity": 12,
+        "unit_price": 84.4,
+        "line_total": 1012.8
+      }
+    ],
+    "subtotal": 1275.75,
+    "vat_rate": 21,
+    "vat_amount": 267.91,
+    "total": 1543.66,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 2
+  },
+  {
+    "doc_id": "INV027",
+    "invoice_number": "F6830",
+    "issue_date": "2026-05-01",
+    "supplier_name": "Inmobiliaria Ortiz e Hijos S.L.",
+    "supplier_cif": "B39992193",
+    "customer_name": "Hotel Plaza Mayor S.A.",
+    "customer_cif": "B60607108",
+    "line_items": [
+      {
+        "description": "Estor enrollable blackout",
+        "quantity": 5,
+        "unit_price": 101.5,
+        "line_total": 507.5
+      },
+      {
+        "description": "Transporte y montaje",
+        "quantity": 4,
+        "unit_price": 79.32,
+        "line_total": 317.28
+      },
+      {
+        "description": "Barra cortina forja 160cm",
+        "quantity": 10,
+        "unit_price": 20.37,
+        "line_total": 203.7
+      },
+      {
+        "description": "Alfombra yute 160x230",
+        "quantity": 12,
+        "unit_price": 83.49,
+        "line_total": 1001.88
+      }
+    ],
+    "subtotal": 1827.32,
+    "vat_rate": 10,
+    "vat_amount": 182.73,
+    "total": 2010.95,
+    "currency": "EUR",
+    "has_arith_error": true,
+    "template": 3
+  },
+  {
+    "doc_id": "INV028",
+    "invoice_number": "A-8185",
+    "issue_date": "2025-09-15",
+    "supplier_name": "Gil Rodriguez Instalaciones S.L.",
+    "supplier_cif": "B73517450",
+    "customer_name": "Hotel Plaza Mayor S.A.",
+    "customer_cif": "B72042930",
+    "line_items": [
+      {
+        "description": "Mosquitera enrollable",
+        "quantity": 4,
+        "unit_price": 20.13,
+        "line_total": 80.52
+      },
+      {
+        "description": "Cojin decorativo 45x45",
+        "quantity": 1,
+        "unit_price": 8.34,
+        "line_total": 8.34
+      },
+      {
+        "description": "Tela tapiceria terciopelo (m)",
+        "quantity": 3,
+        "unit_price": 16.57,
+        "line_total": 49.71
+      }
+    ],
+    "subtotal": 131.64,
+    "vat_rate": 4,
+    "vat_amount": 5.27,
+    "total": 136.91,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 0
+  },
+  {
+    "doc_id": "INV029",
+    "invoice_number": "FAC1477",
+    "issue_date": "2025-09-29",
+    "supplier_name": "Mobiliario Guerrero Global S.L.",
+    "supplier_cif": "B35279116",
+    "customer_name": "Hotel Plaza Mayor S.A.",
+    "customer_cif": "B16772329",
+    "line_items": [
+      {
+        "description": "Alfombra yute 160x230",
+        "quantity": 1,
+        "unit_price": 117.8,
+        "line_total": 117.8
+      },
+      {
+        "description": "Estor enrollable blackout",
+        "quantity": 20,
+        "unit_price": 66.06,
+        "line_total": 1321.2
+      }
+    ],
+    "subtotal": 1367.05,
+    "vat_rate": 10,
+    "vat_amount": 136.71,
+    "total": 1503.76,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 1
+  },
+  {
+    "doc_id": "INV030",
+    "invoice_number": "FAC8723",
+    "issue_date": "2025-09-09",
+    "supplier_name": "Mobiliario Cano Centro S.A.",
+    "supplier_cif": "A15366370",
+    "customer_name": "Hotel Plaza Mayor S.A.",
+    "customer_cif": "B17010737",
+    "line_items": [
+      {
+        "description": "Cojin decorativo 45x45",
+        "quantity": 3,
+        "unit_price": 14.15,
+        "line_total": 42.45
+      },
+      {
+        "description": "Tela tapiceria terciopelo (m)",
+        "quantity": 2,
+        "unit_price": 19.89,
+        "line_total": 39.78
+      },
+      {
+        "description": "Panel japones 60x300",
+        "quantity": 2,
+        "unit_price": 39.82,
+        "line_total": 79.64
+      }
+    ],
+    "subtotal": 145.68,
+    "vat_rate": 21,
+    "vat_amount": 30.59,
+    "total": 177.17,
+    "currency": "EUR",
+    "has_arith_error": true,
+    "template": 2
+  },
+  {
+    "doc_id": "INV031",
+    "invoice_number": "F5461",
+    "issue_date": "2025-07-28",
+    "supplier_name": "Iglesias Martinez Servicios Informaticos S.A.",
+    "supplier_cif": "A82210402",
+    "customer_name": "Reformas Integrales Sur S.L.",
+    "customer_cif": "B52941309",
+    "line_items": [
+      {
+        "description": "Visillo voile blanco (m)",
+        "quantity": 12,
+        "unit_price": 11.43,
+        "line_total": 137.16
+      },
+      {
+        "description": "Barra cortina forja 160cm",
+        "quantity": 1,
+        "unit_price": 20.86,
+        "line_total": 20.86
+      },
+      {
+        "description": "Estor enrollable blackout",
+        "quantity": 5,
+        "unit_price": 57.41,
+        "line_total": 287.05
+      },
+      {
+        "description": "Cojin decorativo 45x45",
+        "quantity": 5,
+        "unit_price": 12.76,
+        "line_total": 63.8
+      },
+      {
+        "description": "Riel aluminio 2m",
+        "quantity": 1,
+        "unit_price": 15.67,
+        "line_total": 15.67
+      }
+    ],
+    "subtotal": 524.54,
+    "vat_rate": 21,
+    "vat_amount": 110.15,
+    "total": 634.69,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 3
+  },
+  {
+    "doc_id": "INV032",
+    "invoice_number": "A-0941",
+    "issue_date": "2025-11-11",
+    "supplier_name": "Marin Gonzalez Alimentacion S.L.",
+    "supplier_cif": "B60167442",
+    "customer_name": "Interiorismo Nova S.L.",
+    "customer_cif": "B95660536",
+    "line_items": [
+      {
+        "description": "Panel japones 60x300",
+        "quantity": 2,
+        "unit_price": 44.71,
+        "line_total": 89.42
+      }
+    ],
+    "subtotal": 89.42,
+    "vat_rate": 21,
+    "vat_amount": 18.78,
+    "total": 108.2,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 0
+  },
+  {
+    "doc_id": "INV033",
+    "invoice_number": "F9485",
+    "issue_date": "2026-02-11",
+    "supplier_name": "Perez Torres Logistica S.L.",
+    "supplier_cif": "B80356892",
+    "customer_name": "Restaurante El Olivo S.L.",
+    "customer_cif": "B58225426",
+    "line_items": [
+      {
+        "description": "Alfombra yute 160x230",
+        "quantity": 5,
+        "unit_price": 115.31,
+        "line_total": 576.55
+      }
+    ],
+    "subtotal": 576.55,
+    "vat_rate": 21,
+    "vat_amount": 121.08,
+    "total": 707.63,
+    "currency": "EUR",
+    "has_arith_error": true,
+    "template": 1
+  },
+  {
+    "doc_id": "INV034",
+    "invoice_number": "FAC6727",
+    "issue_date": "2025-08-16",
+    "supplier_name": "Servicios Informaticos Iglesias S.L.",
+    "supplier_cif": "B00128389",
+    "customer_name": "Restaurante El Olivo S.L.",
+    "customer_cif": "B37293065",
+    "line_items": [
+      {
+        "description": "Cortina lino beige 140x260",
+        "quantity": 5,
+        "unit_price": 37.94,
+        "line_total": 189.7
+      },
+      {
+        "description": "Servicio de instalacion (h)",
+        "quantity": 7,
+        "unit_price": 26.73,
+        "line_total": 187.11
+      }
+    ],
+    "subtotal": 339.13,
+    "vat_rate": 21,
+    "vat_amount": 71.22,
+    "total": 410.35,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 2
+  },
+  {
+    "doc_id": "INV035",
+    "invoice_number": "2025/6982",
+    "issue_date": "2026-07-18",
+    "supplier_name": "Consultoria Gonzalez e Hijos S.L.",
+    "supplier_cif": "B71705982",
+    "customer_name": "Interiorismo Nova S.L.",
+    "customer_cif": "B93665784",
+    "line_items": [
+      {
+        "description": "Transporte y montaje",
+        "quantity": 1,
+        "unit_price": 70.07,
+        "line_total": 70.07
+      }
+    ],
+    "subtotal": 70.07,
+    "vat_rate": 21,
+    "vat_amount": 14.71,
+    "total": 84.78,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 3
+  },
+  {
+    "doc_id": "INV036",
+    "invoice_number": "FAC6290",
+    "issue_date": "2025-02-25",
+    "supplier_name": "Instalaciones Torres e Hijos S.A.",
+    "supplier_cif": "A67260216",
+    "customer_name": "Clinica Dental Sonrisa S.L.P.",
+    "customer_cif": "B20191326",
+    "line_items": [
+      {
+        "description": "Servicio de instalacion (h)",
+        "quantity": 2,
+        "unit_price": 27.57,
+        "line_total": 55.14
+      },
+      {
+        "description": "Riel aluminio 2m",
+        "quantity": 10,
+        "unit_price": 18.58,
+        "line_total": 185.8
+      },
+      {
+        "description": "Mosquitera enrollable",
+        "quantity": 12,
+        "unit_price": 37.65,
+        "line_total": 451.8
+      },
+      {
+        "description": "Alfombra yute 160x230",
+        "quantity": 1,
+        "unit_price": 64.88,
+        "line_total": 64.88
+      },
+      {
+        "description": "Estor enrollable blackout",
+        "quantity": 2,
+        "unit_price": 46.58,
+        "line_total": 93.16
+      }
+    ],
+    "subtotal": 850.78,
+    "vat_rate": 21,
+    "vat_amount": 178.66,
+    "total": 1029.44,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 0
+  },
+  {
+    "doc_id": "INV037",
+    "invoice_number": "FV4657",
+    "issue_date": "2026-02-18",
+    "supplier_name": "Talleres Santos S.L.",
+    "supplier_cif": "B46474367",
+    "customer_name": "Clinica Dental Sonrisa S.L.P.",
+    "customer_cif": "B56241805",
+    "line_items": [
+      {
+        "description": "Visillo voile blanco (m)",
+        "quantity": 2,
+        "unit_price": 8.29,
+        "line_total": 16.58
+      },
+      {
+        "description": "Tela tapiceria terciopelo (m)",
+        "quantity": 12,
+        "unit_price": 19.0,
+        "line_total": 228.0
+      },
+      {
+        "description": "Servicio de instalacion (h)",
+        "quantity": 5,
+        "unit_price": 37.32,
+        "line_total": 186.6
+      }
+    ],
+    "subtotal": 431.18,
+    "vat_rate": 21,
+    "vat_amount": 90.55,
+    "total": 531.73,
+    "currency": "EUR",
+    "has_arith_error": true,
+    "template": 1
+  },
+  {
+    "doc_id": "INV038",
+    "invoice_number": "F3731",
+    "issue_date": "2025-01-02",
+    "supplier_name": "Castro Romero Talleres S.L.",
+    "supplier_cif": "B87638029",
+    "customer_name": "Hotel Plaza Mayor S.A.",
+    "customer_cif": "B49668502",
+    "line_items": [
+      {
+        "description": "Cojin decorativo 45x45",
+        "quantity": 5,
+        "unit_price": 18.7,
+        "line_total": 93.5
+      },
+      {
+        "description": "Visillo voile blanco (m)",
+        "quantity": 12,
+        "unit_price": 8.07,
+        "line_total": 96.84
+      },
+      {
+        "description": "Riel aluminio 2m",
+        "quantity": 1,
+        "unit_price": 17.33,
+        "line_total": 17.33
+      },
+      {
+        "description": "Mosquitera enrollable",
+        "quantity": 20,
+        "unit_price": 28.88,
+        "line_total": 577.6
+      }
+    ],
+    "subtotal": 706.74,
+    "vat_rate": 10,
+    "vat_amount": 70.67,
+    "total": 777.41,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 2
+  },
+  {
+    "doc_id": "INV039",
+    "invoice_number": "FV7486",
+    "issue_date": "2025-09-07",
+    "supplier_name": "Martinez Marin Carpinteria Grupo S.A.",
+    "supplier_cif": "A16275026",
+    "customer_name": "Decoraciones Martin S.L.",
+    "customer_cif": "B12464004",
+    "line_items": [
+      {
+        "description": "Tela tapiceria terciopelo (m)",
+        "quantity": 5,
+        "unit_price": 26.82,
+        "line_total": 134.1
+      },
+      {
+        "description": "Estor enrollable blackout",
+        "quantity": 10,
+        "unit_price": 86.69,
+        "line_total": 866.9
+      },
+      {
+        "description": "Transporte y montaje",
+        "quantity": 2,
+        "unit_price": 42.25,
+        "line_total": 84.5
+      }
+    ],
+    "subtotal": 976.95,
+    "vat_rate": 21,
+    "vat_amount": 205.16,
+    "total": 1172.11,
+    "currency": "EUR",
+    "has_arith_error": true,
+    "template": 3
+  },
+  {
+    "doc_id": "INV040",
+    "invoice_number": "F9126",
+    "issue_date": "2025-04-18",
+    "supplier_name": "Garrido Rodriguez Servicios Informaticos S.L.",
+    "supplier_cif": "B63342729",
+    "customer_name": "Clinica Dental Sonrisa S.L.P.",
+    "customer_cif": "B32638983",
+    "line_items": [
+      {
+        "description": "Transporte y montaje",
+        "quantity": 1,
+        "unit_price": 54.36,
+        "line_total": 54.36
+      }
+    ],
+    "subtotal": 54.36,
+    "vat_rate": 21,
+    "vat_amount": 11.42,
+    "total": 65.78,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 0
+  },
+  {
+    "doc_id": "INV041",
+    "invoice_number": "F8413",
+    "issue_date": "2025-08-11",
+    "supplier_name": "Cortes Rodriguez Instalaciones S.L.",
+    "supplier_cif": "B40275943",
+    "customer_name": "Decoraciones Martin S.L.",
+    "customer_cif": "B24332538",
+    "line_items": [
+      {
+        "description": "Transporte y montaje",
+        "quantity": 12,
+        "unit_price": 40.52,
+        "line_total": 486.24
+      },
+      {
+        "description": "Cortina lino beige 140x260",
+        "quantity": 1,
+        "unit_price": 49.38,
+        "line_total": 49.38
+      },
+      {
+        "description": "Alfombra yute 160x230",
+        "quantity": 1,
+        "unit_price": 74.79,
+        "line_total": 74.79
+      },
+      {
+        "description": "Visillo voile blanco (m)",
+        "quantity": 4,
+        "unit_price": 12.41,
+        "line_total": 49.64
+      },
+      {
+        "description": "Servicio de instalacion (h)",
+        "quantity": 5,
+        "unit_price": 37.72,
+        "line_total": 188.6
+      },
+      {
+        "description": "Panel japones 60x300",
+        "quantity": 10,
+        "unit_price": 56.8,
+        "line_total": 568.0
+      }
+    ],
+    "subtotal": 1274.99,
+    "vat_rate": 4,
+    "vat_amount": 51.0,
+    "total": 1325.99,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 1
+  },
+  {
+    "doc_id": "INV042",
+    "invoice_number": "F0605",
+    "issue_date": "2025-05-26",
+    "supplier_name": "Textil Gomez Global Sur S.L.",
+    "supplier_cif": "B83905372",
+    "customer_name": "Decoraciones Martin S.L.",
+    "customer_cif": "B20101952",
+    "line_items": [
+      {
+        "description": "Mosquitera enrollable",
+        "quantity": 3,
+        "unit_price": 33.7,
+        "line_total": 101.1
+      },
+      {
+        "description": "Barra cortina forja 160cm",
+        "quantity": 1,
+        "unit_price": 33.26,
+        "line_total": 33.26
+      },
+      {
+        "description": "Visillo voile blanco (m)",
+        "quantity": 2,
+        "unit_price": 7.3,
+        "line_total": 14.6
+      },
+      {
+        "description": "Tela tapiceria terciopelo (m)",
+        "quantity": 1,
+        "unit_price": 16.69,
+        "line_total": 16.69
+      }
+    ],
+    "subtotal": 149.09,
+    "vat_rate": 10,
+    "vat_amount": 14.91,
+    "total": 164.0,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 2
+  },
+  {
+    "doc_id": "INV043",
+    "invoice_number": "2025/5613",
+    "issue_date": "2025-10-29",
+    "supplier_name": "Gomez Martinez Construcciones S.L.",
+    "supplier_cif": "B87416277",
+    "customer_name": "Reformas Integrales Sur S.L.",
+    "customer_cif": "B40544058",
+    "line_items": [
+      {
+        "description": "Cortina lino beige 140x260",
+        "quantity": 1,
+        "unit_price": 80.38,
+        "line_total": 80.38
+      }
+    ],
+    "subtotal": 80.38,
+    "vat_rate": 21,
+    "vat_amount": 16.88,
+    "total": 107.26,
+    "currency": "EUR",
+    "has_arith_error": true,
+    "template": 3
+  },
+  {
+    "doc_id": "INV044",
+    "invoice_number": "FAC4804",
+    "issue_date": "2025-04-04",
+    "supplier_name": "Construcciones Molina del Sur Hermanos S.L.",
+    "supplier_cif": "B56835960",
+    "customer_name": "Hotel Plaza Mayor S.A.",
+    "customer_cif": "B60834009",
+    "line_items": [
+      {
+        "description": "Cojin decorativo 45x45",
+        "quantity": 12,
+        "unit_price": 17.87,
+        "line_total": 214.44
+      }
+    ],
+    "subtotal": 193.0,
+    "vat_rate": 21,
+    "vat_amount": 40.53,
+    "total": 233.53,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 0
+  },
+  {
+    "doc_id": "INV045",
+    "invoice_number": "F5451",
+    "issue_date": "2026-07-29",
+    "supplier_name": "Asesores Castillo Global 2000 S.L.U.",
+    "supplier_cif": "B23481096",
+    "customer_name": "Interiorismo Nova S.L.",
+    "customer_cif": "B16616054",
+    "line_items": [
+      {
+        "description": "Visillo voile blanco (m)",
+        "quantity": 3,
+        "unit_price": 14.44,
+        "line_total": 43.32
+      },
+      {
+        "description": "Riel aluminio 2m",
+        "quantity": 3,
+        "unit_price": 20.97,
+        "line_total": 62.91
+      },
+      {
+        "description": "Tela tapiceria terciopelo (m)",
+        "quantity": 1,
+        "unit_price": 36.53,
+        "line_total": 36.53
+      }
+    ],
+    "subtotal": 142.76,
+    "vat_rate": 21,
+    "vat_amount": 29.98,
+    "total": 172.74,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 1
+  },
+  {
+    "doc_id": "INV046",
+    "invoice_number": "A-7289",
+    "issue_date": "2025-06-23",
+    "supplier_name": "Logistica Medina S.L.",
+    "supplier_cif": "B99425050",
+    "customer_name": "Clinica Dental Sonrisa S.L.P.",
+    "customer_cif": "B49325731",
+    "line_items": [
+      {
+        "description": "Transporte y montaje",
+        "quantity": 1,
+        "unit_price": 50.91,
+        "line_total": 50.91
+      },
+      {
+        "description": "Visillo voile blanco (m)",
+        "quantity": 5,
+        "unit_price": 10.7,
+        "line_total": 53.5
+      }
+    ],
+    "subtotal": 99.19,
+    "vat_rate": 21,
+    "vat_amount": 20.83,
+    "total": 120.02,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 2
+  },
+  {
+    "doc_id": "INV047",
+    "invoice_number": "FV6462",
+    "issue_date": "2025-10-15",
+    "supplier_name": "Textil Rubio Grupo S.L.",
+    "supplier_cif": "B58385162",
+    "customer_name": "Reformas Integrales Sur S.L.",
+    "customer_cif": "B00663849",
+    "line_items": [
+      {
+        "description": "Transporte y montaje",
+        "quantity": 3,
+        "unit_price": 45.52,
+        "line_total": 136.56
+      },
+      {
+        "description": "Cojin decorativo 45x45",
+        "quantity": 1,
+        "unit_price": 10.3,
+        "line_total": 10.3
+      },
+      {
+        "description": "Riel aluminio 2m",
+        "quantity": 1,
+        "unit_price": 15.52,
+        "line_total": 15.52
+      },
+      {
+        "description": "Barra cortina forja 160cm",
+        "quantity": 2,
+        "unit_price": 44.56,
+        "line_total": 89.12
+      },
+      {
+        "description": "Panel japones 60x300",
+        "quantity": 4,
+        "unit_price": 58.8,
+        "line_total": 235.2
+      }
+    ],
+    "subtotal": 462.36,
+    "vat_rate": 21,
+    "vat_amount": 97.1,
+    "total": 549.46,
+    "currency": "EUR",
+    "has_arith_error": true,
+    "template": 3
+  },
+  {
+    "doc_id": "INV048",
+    "invoice_number": "FV5474",
+    "issue_date": "2026-06-15",
+    "supplier_name": "Gonzalez Rodriguez Construcciones Sur S.L.",
+    "supplier_cif": "B72685001",
+    "customer_name": "Decoraciones Martin S.L.",
+    "customer_cif": "B67104836",
+    "line_items": [
+      {
+        "description": "Visillo voile blanco (m)",
+        "quantity": 2,
+        "unit_price": 11.77,
+        "line_total": 23.54
+      },
+      {
+        "description": "Mosquitera enrollable",
+        "quantity": 12,
+        "unit_price": 35.14,
+        "line_total": 421.68
+      },
+      {
+        "description": "Alfombra yute 160x230",
+        "quantity": 4,
+        "unit_price": 135.39,
+        "line_total": 541.56
+      },
+      {
+        "description": "Barra cortina forja 160cm",
+        "quantity": 1,
+        "unit_price": 42.16,
+        "line_total": 42.16
+      },
+      {
+        "description": "Transporte y montaje",
+        "quantity": 3,
+        "unit_price": 76.94,
+        "line_total": 230.82
+      },
+      {
+        "description": "Cojin decorativo 45x45",
+        "quantity": 2,
+        "unit_price": 11.5,
+        "line_total": 23.0
+      }
+    ],
+    "subtotal": 1218.62,
+    "vat_rate": 21,
+    "vat_amount": 255.91,
+    "total": 1473.53,
+    "currency": "EUR",
+    "has_arith_error": true,
+    "template": 0
+  },
+  {
+    "doc_id": "INV049",
+    "invoice_number": "A-8517",
+    "issue_date": "2025-07-08",
+    "supplier_name": "Construcciones Prieto Levante S.L.",
+    "supplier_cif": "B18444216",
+    "customer_name": "Decoraciones Martin S.L.",
+    "customer_cif": "B95044665",
+    "line_items": [
+      {
+        "description": "Panel japones 60x300",
+        "quantity": 5,
+        "unit_price": 49.91,
+        "line_total": 249.55
+      }
+    ],
+    "subtotal": 237.07,
+    "vat_rate": 21,
+    "vat_amount": 49.78,
+    "total": 286.85,
+    "currency": "EUR",
+    "has_arith_error": false,
+    "template": 1
+  }
+]

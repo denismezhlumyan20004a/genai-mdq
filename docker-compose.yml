@@ -1,0 +1,8 @@
+services:
+  api:
+    build: .
+    ports: ["8000:8000"]
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - MDQ_API_KEY=${MDQ_API_KEY:-}
+      - MDQ_MODEL=${MDQ_MODEL:-claude-haiku-4-5}
