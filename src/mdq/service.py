@@ -10,7 +10,7 @@ from pathlib import Path
 import joblib
 import pandas as pd
 
-from .extract import LLMExtractor, RegexExtractor
+from .extract import LLMExtractor, RegexExtractor, pdf_text
 from .invoice_rules import SupplierIndex, validate_invoice
 from .matching import FEATURES, candidate_pairs, cluster, golden_records, pair_features, predict_rules, prepare
 from .quality import quality_report
@@ -81,12 +81,13 @@ class MDQService:
             tmp = f.name
         try:
             inv, meta = ex.extract(tmp)
+            text = pdf_text(tmp)
         finally:
             os.unlink(tmp)
         if inv is None:
             return {"extractor": ex.name, "invoice": None, "route": "needs_review",
                     "issues": ["extraction_failed"], "meta": meta}
-        v = validate_invoice(inv, self.supplier_index)
+        v = validate_invoice(inv, self.supplier_index, source_text=text)
         return {"extractor": ex.name, "invoice": inv.model_dump(mode="json"), **v, "meta": meta}
 
     def _llm_extractor(self) -> LLMExtractor:

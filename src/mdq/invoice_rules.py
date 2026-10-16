@@ -6,6 +6,7 @@ Every extracted invoice gets a list of issues and a routing decision:
 """
 from __future__ import annotations
 
+import re
 from datetime import date
 
 import pandas as pd
@@ -40,10 +41,39 @@ class SupplierIndex:
         return None, "not_found"
 
 
+# whole-number boundaries so "1234.56" is not read as "234.56"; handles 1.234,56 / 1,234.56 / 1234.56
+AMOUNT_RE = r"(?<![\d.,])(?:€\s?)?-?\d+(?:[.,]\d{3})*[.,]\d{2}(?![\d])"
+
+
+def source_amounts(text: str) -> set[float]:
+    """All money amounts printed in the document text (absolute values, 2 decimals)."""
+    from .extract import parse_money
+    out = set()
+    for tok in re.findall(AMOUNT_RE, text or ""):
+        try:
+            out.add(round(abs(parse_money(tok)), 2))
+        except ValueError:
+            pass
+    return out
+
+
+def ungrounded_amounts(inv: Invoice, source_text: str) -> list[str]:
+    """Deterministic grounding check: every extracted amount must literally appear in the source.
+    Catches LLMs that 'helpfully' recompute a value instead of copying what is printed."""
+    printed = source_amounts(source_text)
+    fields = {"subtotal": inv.subtotal, "vat_amount": inv.vat_amount, "total": inv.total}
+    fields |= {f"line_{k}_total": it.line_total for k, it in enumerate(inv.line_items)}
+    return [f"amount_not_in_source:{name}" for name, val in fields.items()
+            if not any(abs(round(abs(val), 2) - p) <= 0.005 for p in printed)]
+
+
 def validate_invoice(inv: Invoice, supplier_index: SupplierIndex | None = None,
-                     today: date | None = None) -> dict:
+                     today: date | None = None, source_text: str | None = None) -> dict:
+    """source_text (the document's own text) enables the grounding check on amounts."""
     today = today or date.today()
     issues = []
+    if source_text is not None:
+        issues += ungrounded_amounts(inv, source_text)
     if not is_valid_cif(inv.supplier_cif):
         issues.append("invalid_supplier_cif")
     if inv.customer_cif and not is_valid_cif(inv.customer_cif):

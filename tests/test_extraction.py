@@ -62,3 +62,16 @@ def test_validation_flags_total_mismatch():
     assert "total_mismatch" not in ok["issues"]
     bad = validate_invoice(Invoice.model_validate(dict(SAMPLE, total=30.0)), today=date(2026, 1, 1))
     assert "total_mismatch" in bad["issues"] and bad["route"] == "needs_review"
+
+
+def test_grounding_catches_llm_corrected_total():
+    """LLM returns a mathematically 'correct' total that is NOT what the document prints."""
+    from mdq.invoice_rules import source_amounts
+    text = "Base imponible 1234.56 EUR\nIVA 21% 259,26 €\nTOTAL €1,500.00"   # printed total is wrong
+    assert {1234.56, 259.26, 1500.0} <= source_amounts(text)
+    assert 234.56 not in source_amounts(text)                                # boundary bug guard
+    llm = dict(SAMPLE, line_items=[], subtotal=1234.56, vat_rate=21, vat_amount=259.26, total=1493.82)
+    v = validate_invoice(Invoice.model_validate(llm), today=date(2026, 1, 1), source_text=text)
+    assert "amount_not_in_source:total" in v["issues"] and v["route"] == "needs_review"
+    ok = validate_invoice(Invoice.model_validate(dict(llm, total=1500.0)), today=date(2026, 1, 1), source_text=text)
+    assert not any(i.startswith("amount_not_in_source") for i in ok["issues"])

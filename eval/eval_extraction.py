@@ -24,7 +24,7 @@ from pathlib import Path
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
-from mdq.extract import LLMExtractor, RegexExtractor  # noqa: E402
+from mdq.extract import LLMExtractor, RegexExtractor, pdf_text  # noqa: E402
 from mdq.invoice_rules import SupplierIndex, validate_invoice  # noqa: E402
 from mdq.normalize import normalize_cif, normalize_name  # noqa: E402
 from mdq.schemas import SCALAR_FIELDS  # noqa: E402
@@ -58,7 +58,8 @@ def items_correct(pred_items, true_items) -> bool:
 def evaluate(extractor, truth: list[dict], sidx: SupplierIndex, master_cif_to_id: dict) -> tuple[dict, pd.DataFrame]:
     rows = []
     for t in truth:
-        inv, meta = extractor.extract(INV_DIR / "pdf" / f"{t['doc_id']}.pdf")
+        pdf_path = INV_DIR / "pdf" / f"{t['doc_id']}.pdf"
+        inv, meta = extractor.extract(pdf_path)
         r = {"doc_id": t["doc_id"], "template": t["template"], "has_arith_error": t["has_arith_error"],
              "schema_valid": inv is not None, "latency_s": meta.get("latency_s", 0),
              "cost_usd": meta.get("cost_usd", 0), "error": meta.get("error")}
@@ -67,8 +68,9 @@ def evaluate(extractor, truth: list[dict], sidx: SupplierIndex, master_cif_to_id
             for f in SCALAR_FIELDS:
                 r[f] = same(f, p[f], t[f])
             r["line_items"] = items_correct(p["line_items"], t["line_items"])
-            v = validate_invoice(inv, sidx, today=date(2026, 12, 31))
-            r["flag_total_mismatch"] = "total_mismatch" in v["issues"]
+            v = validate_invoice(inv, sidx, today=date(2026, 12, 31), source_text=pdf_text(pdf_path))
+            r["flag_total_mismatch"] = ("total_mismatch" in v["issues"]
+                                        or "amount_not_in_source:total" in v["issues"])
             r["route"] = v["route"]
             r["issues"] = ";".join(v["issues"])
             r["supplier_link_ok"] = v["supplier_master_id"] == master_cif_to_id.get(normalize_cif(t["supplier_cif"]))
