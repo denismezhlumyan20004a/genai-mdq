@@ -4,7 +4,8 @@ Personal project: ML entity resolution (golden records) for Spanish company mast
 and LLM invoice extraction (Claude + Pydantic) with business-rule validation and evals, served as a FastAPI service.
 
 **Highlights:** LLM extraction 99.6% field accuracy vs 72.6% regex baseline at <$0.005/invoice ·
-entity resolution F1 0.985 vs 0.734 CIF-only · FastAPI + Docker + CI.
+0 unsafe auto-approvals thanks to a deterministic grounding check · entity resolution F1 0.985 vs 0.734 CIF-only ·
+FastAPI + Docker + CI.
 
 ## Status
 - [x] Day 1 — synthetic Spanish company data with ground truth (noisy duplicates + hard negatives)
@@ -13,6 +14,7 @@ entity resolution F1 0.985 vs 0.734 CIF-only · FastAPI + Docker + CI.
 - [x] Days 5–6 — LLM invoice extraction (Pydantic structured outputs, self-correcting retry) + business-rule validation + field-level evals
 - [x] Day 7 — FastAPI service (/match, /validate, /extract, /invoices/validate) + Docker
 - [x] Day 8 — tests + GitHub Actions CI (pytest, metrics guard, Docker build + smoke test)
+- [x] Grounding check — every LLM-extracted amount must appear in the source document
 - [ ] Next — multilingual embeddings as extra matching feature
 
 ## Quickstart
@@ -85,28 +87,29 @@ End-to-end (after clustering / transitive closure):
 so each extracted invoice is linked back to a golden record.
 
 Pipeline: `PDF → text (pdfplumber) or native PDF → Claude tool use (forced, JSON = Pydantic schema)
-→ schema validation (1 self-correcting retry) → business rules → route: auto_approve | needs_review`.
+→ schema validation (1 self-correcting retry) → grounding check → business rules → route: auto_approve | needs_review`.
 
 Business rules: CIF checksum, qty×price = line total, base + IVA = total, IVA amount = base × rate,
-valid IVA rate, no future dates, supplier exists in master data. On ground-truth data the rules catch
-10/10 injected errors with 0 false positives.
+valid IVA rate, no future dates, supplier exists in master data, and a **grounding check**: every extracted
+amount (subtotal, IVA, total, line totals) must literally appear in the document text.
 
 | Extractor | Field acc. | Line items | Docs 100% correct | Error recall | Unsafe auto-approve | Supplier link | Latency | Cost/doc |
 |---|---|---|---|---|---|---|---|---|
 | Regex baseline | 0.726 | 0.74 | 0.62 | 0.70 | 5 / 50 | 0.74 | 0.08 s | $0 |
-| Claude Haiku 4.5 (text) | 0.996 | 1.00 | 0.96 | 0.90 | 1 / 50 | 1.00 | 3.5 s | $0.0044 |
-| Claude Haiku 4.5 (native PDF) | 0.998 | 1.00 | 0.98 | 0.90 | 1 / 50 | 1.00 | 4.4 s | $0.0056 |
+| Claude Haiku 4.5 (text) | 0.996 | 1.00 | 0.96 | **1.00** | **0 / 50** | 1.00 | 3.5 s | $0.0044 |
+| Claude Haiku 4.5 (native PDF) | 0.998 | 1.00 | 0.98 | **1.00** | **0 / 50** | 1.00 | 4.4 s | $0.0056 |
 
 **Findings**
 - The LLM lifts field accuracy from 72.6% to 99.6–99.8% and fully-correct documents from 62% to 96–98%,
   for under half a cent per invoice. On the hardest (boxed) layout: regex 17% vs LLM 83–92%.
+- **The LLM silently "fixed" a wrong printed total**: despite the prompt, it returned the mathematically correct
+  value, which hid the error from the arithmetic rules (1 unsafe auto-approval). Adding a deterministic
+  grounding check against the source text brought unsafe auto-approvals to **0** and error recall to **100%**,
+  with **0 false positives** on correct extractions. Lesson: never trust LLM-produced numbers without
+  verifying them against the source.
 - Native PDF input is slightly more accurate than extracted text (+2 pp documents) at ~27% higher cost
   and ~0.8 s more latency, so text input is the default and PDF input is the fallback for complex layouts.
-- Unsafe auto-approvals drop from 5 to 1. The remaining miss is an invoice with a wrong printed total:
-  despite the prompt, the model returned the *mathematically correct* total, which hid the error from the
-  business rules. Lesson: LLMs tend to "helpfully" fix values, so amounts must be cross-checked
-  deterministically against the source text before auto-approval.
 - Regex is ~25x faster and free, but brittle: it only works on layouts it was written for.
 
-**Next steps:** deterministic cross-check of LLM amounts against the PDF text; customer master lookup;
-confidence-based routing; Bedrock + Textract for scanned documents.
+**Next steps:** customer master lookup for text fields; confidence-based routing; Bedrock + Textract for
+scanned documents; idempotency (reject duplicate invoices by number + supplier CIF).
