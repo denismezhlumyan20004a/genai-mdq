@@ -111,5 +111,5 @@ amount (subtotal, IVA, total, line totals) must literally appear in the document
   and ~0.8 s more latency, so text input is the default and PDF input is the fallback for complex layouts.
 - Regex is ~25x faster and free, but brittle: it only works on layouts it was written for.
 
-**Next steps:** customer master lookup for text fields; confidence-based routing; Bedrock + Textract for
+**Potential extensions:** customer master lookup for text fields; confidence-based routing; Bedrock + Textract for
 scanned documents; idempotency (reject duplicate invoices by number + supplier CIF).
